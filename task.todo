@@ -4,9 +4,9 @@ ikutin video dari sini :
     ✔ video 3 https://youtu.be/Sq_dSWV_JX8?list=PLIan8aHxsPj3a7oLHb2a8pw8IHBq45WYu @done(20-09-27 22:53)
     ✔ video 4 instalasi jsonplaceholder server sebagai fake api https://youtu.be/ump7zbUunfM?list=PLIan8aHxsPj3a7oLHb2a8pw8IHBq45WYu @done (10/6/2020, 11:00:31 PM)
     ✔ video 5 Membuat Card Product https://youtu.be/E-1kGPpK_XA?list=PLIan8aHxsPj3a7oLHb2a8pw8IHBq45WYu @done (10/7/2020, 7:27:57 AM)
-    ☐ video 6
-    ☐ video 7
-    ☐ video 8
+    ✔ video 6 Membuat Halaman Produc https://youtu.be/d0oqgqkAE5Q?list=PLIan8aHxsPj3a7oLHb2a8pw8IHBq45WYu @done(20-10-07 20:04)
+    ✔ video 7 Membuat Halaman Product Detail https://youtu.be/TJz2ktRQ5dE?list=PLIan8aHxsPj3a7oLHb2a8pw8IHBq45WYu terakhir pada 6:32 https://youtu.be/TJz2ktRQ5dE?list=PLIan8aHxsPj3a7oLHb2a8pw8IHBq45WYu&t=392 @done(20-10-08 21:30)
+    ✔ video 8 8. Membuat Pesanan Makanan https://youtu.be/VQr6aOsIg-U?list=PLIan8aHxsPj3a7oLHb2a8pw8IHBq45WYu @done(20-10-08 22:19)
     ☐ video 9
     ☐ video 10
     ☐ video 11 
@@ -19,4 +19,9 @@ resource:
     ☐ foonts : montserrat (google fonts)
 		☐ edit gambar udraw dari svg pakai figma.com
 		☐ pakai json-placeholder server https://github.com/typicode/json-server
-			☐  cara panggilnya json-server --watch db.json
+            ☐  cara panggilnya json-server --watch db.json
+    ☐ vue toast notification https://github.com/ankurk91/vue-toast-notification
+    ☐ 
+
+bug:
+    ☐ pada sasat terjadi input data pada cart, cart nya tidak langsung terupdate melainkan nilai awal setelah di refresh baru terupdate

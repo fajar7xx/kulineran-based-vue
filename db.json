@@ -102,15 +102,42 @@
   "keranjangs": [
     {
       "jumlah_pemesanan": "1",
+      "keterangan": "Kecap",
       "products": {
-        "id": 2,
-        "kode": "K-02",
-        "nama": "Nasi Goreng Telur",
-        "harga": 14000,
+        "id": 1,
+        "kode": "K-01",
+        "nama": "Sate Ayam",
+        "harga": 16000,
         "is_ready": true,
-        "gambar": "nasi-goreng-telor.jpg"
+        "gambar": "sate-ayam.jpg"
       },
       "id": 1
+    },
+    {
+      "jumlah_pemesanan": "2",
+      "keterangan": "pedes",
+      "products": {
+        "id": 5,
+        "kode": "K-05",
+        "nama": "Mie Goreng",
+        "harga": 13000,
+        "is_ready": true,
+        "gambar": "mie-goreng.jpg"
+      },
+      "id": 2
+    },
+    {
+      "jumlah_pemesanan": "3",
+      "keterangan": "daaf",
+      "products": {
+        "id": 6,
+        "kode": "K-06",
+        "nama": "Bakso",
+        "harga": 10000,
+        "is_ready": true,
+        "gambar": "bakso.jpg"
+      },
+      "id": 3
     }
   ],
   "pesanans": [
