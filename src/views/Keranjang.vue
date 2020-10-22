@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar :updateKeranjang="keranjangs"/>
+    <Navbar :updateKeranjang="keranjangs" />
     <div class="container">
       <!-- breadcrumb -->
       <div class="row mt-5">
@@ -82,6 +82,45 @@
           </div>
         </div>
       </div>
+
+      <!-- form-checkout -->
+      <div class="row justify-content-end">
+        <div class="col-md-4">
+          <form class="mt-4" @submit.prevent>
+            <div class="form-group">
+              <label for="nama">Nama Pemesan</label>
+              <input
+                type="text"
+                name="nama"
+                id="nama"
+                class="form-control"
+                min="0"
+                v-model="pesan.nama"
+              />
+            </div>
+            <div class="form-group">
+              <label for="noMeja">No Meja</label>
+              <input
+                type="number"
+                name="noMeja"
+                id="noMeja"
+                class="form-control"
+                min="0"
+                v-model="pesan.noMeja"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-success float-right"
+              @click="checkout()"
+            >
+              <b-icon-cart></b-icon-cart>
+              Pesan
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -98,6 +137,7 @@ export default {
   data() {
     return {
       keranjangs: [],
+      pesan: {},
     };
   },
   methods: {
@@ -126,6 +166,42 @@ export default {
             .catch((error) => console.log(error));
         })
         .catch((error) => console.log(error));
+    },
+    checkout() {
+      // validasi
+      if (this.pesan.nama && this.pesan.noMeja) {
+        this.pesan.keranjangs = this.keranjangs;
+        axios
+          .post("http://localhost:3000/pesanans", this.pesan)
+          .then(() => {
+            // console.log("Berhasil")
+
+            // hapus semua keranjang
+            this.keranjangs.map(function (item) {
+              axios
+                .delete("http://localhost:3000/keranjangs/" + item.id)
+                .catch((error) => console.log(error));
+            });
+
+            this.$router.push({ path: "/pesanan-sukses" });
+            this.$toast.success("Sukses Di pesan.", {
+              // optional options Object
+              type: "success",
+              position: "top-right",
+              duration: 3000,
+              dismissible: true,
+            });
+          })
+          .catch((error) => console.log(error));
+      } else {
+        this.$toast.error("Nama dan No meja wajib di isi.", {
+          // optional options Object
+          type: "error",
+          position: "top-right",
+          duration: 3000,
+          dismissible: true,
+        });
+      }
     },
   },
   mounted() {

@@ -99,77 +99,15 @@
       "gambar": "lontong-opor-ayam.jpg"
     }
   ],
-  "keranjangs": [
-    {
-      "jumlah_pemesanan": "1",
-      "products": {
-        "id": 2,
-        "kode": "K-02",
-        "nama": "Nasi Goreng Telur",
-        "harga": 14000,
-        "is_ready": true,
-        "gambar": "nasi-goreng-telor.jpg"
-      },
-      "id": 1
-    },
-    {
-      "jumlah_pemesanan": "1",
-      "keterangan": "res",
-      "products": {
-        "id": 1,
-        "kode": "K-01",
-        "nama": "Sate Ayam",
-        "harga": 16000,
-        "is_ready": true,
-        "gambar": "sate-ayam.jpg"
-      },
-      "id": 2
-    },
-    {
-      "jumlah_pemesanan": "1",
-      "products": {
-        "id": 6,
-        "kode": "K-06",
-        "nama": "Bakso",
-        "harga": 10000,
-        "is_ready": true,
-        "gambar": "bakso.jpg"
-      },
-      "id": 3
-    },
-    {
-      "jumlah_pemesanan": "1",
-      "products": {
-        "id": 3,
-        "kode": "K-03",
-        "nama": "Nasi Rames",
-        "harga": 12000,
-        "is_ready": true,
-        "gambar": "nasi-rames.jpg"
-      },
-      "id": 4
-    }
-  ],
+  "keranjangs": [],
   "pesanans": [
     {
-      "nama": "Afif",
+      "nama": "fajar",
       "noMeja": "3",
       "keranjangs": [
         {
           "jumlah_pemesanan": "1",
-          "keterangan": "Pedes",
-          "products": {
-            "id": 1,
-            "kode": "K-01",
-            "nama": "Sate Ayam",
-            "harga": 16000,
-            "is_ready": true,
-            "gambar": "sate-ayam.jpg"
-          },
-          "id": 1
-        },
-        {
-          "jumlah_pemesanan": "1",
+          "keterangan": "ddf",
           "products": {
             "id": 2,
             "kode": "K-02",
@@ -178,10 +116,43 @@
             "is_ready": true,
             "gambar": "nasi-goreng-telor.jpg"
           },
+          "id": 1
+        },
+        {
+          "jumlah_pemesanan": "1",
+          "keterangan": "dasfas",
+          "products": {
+            "id": 3,
+            "kode": "K-03",
+            "nama": "Nasi Rames",
+            "harga": 12000,
+            "is_ready": true,
+            "gambar": "nasi-rames.jpg"
+          },
           "id": 2
         }
       ],
       "id": 1
+    },
+    {
+      "nama": "Bank Maybank 2",
+      "noMeja": "3",
+      "keranjangs": [
+        {
+          "jumlah_pemesanan": "2",
+          "keterangan": "dasfasf",
+          "products": {
+            "id": 2,
+            "kode": "K-02",
+            "nama": "Nasi Goreng Telur",
+            "harga": 14000,
+            "is_ready": true,
+            "gambar": "nasi-goreng-telor.jpg"
+          },
+          "id": 1
+        }
+      ],
+      "id": 2
     }
   ]
 }
